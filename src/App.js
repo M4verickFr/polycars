@@ -4,7 +4,7 @@ import Header from './components/header';
 import Cars from './components/cars';
 import List from './components/list';
 
-const baseURL = "https://polytech-info734.herokuapp.com/api/v1/";
+const baseURL = "https://cors-anywhere.herokuapp.com/https://polytech-info734.herokuapp.com/api/v1/";
 
 const initialFormData = Object.freeze({
   title: "",
