@@ -12,7 +12,7 @@ router.post("/polycars", (req, res) => {
 });
 
 //READ
-router.get("/polycarss", (req, res) => {
+router.get("/polycars", (req, res) => {
     
     controller.reads(req, res);
 
