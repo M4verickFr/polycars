@@ -65,7 +65,7 @@ const infoLogger = loggers.get('infoLogger');
 
 //Connecting to MongoDB (async/await approach)
 const connectDb = async () => {
-    await mongoose.connect('mongodb+srv://Me:7g8XF8jj@cluster0.femo3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology : true}).then(
+    await mongoose.connect('mongodb+srv://Me:d8EfQ92DrjNnbPr@cluster0.femo3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology : true}).then(
         () => {
             console.log(chalk.green(`Connected to database`))
             infoLogger.info("Connected to database");
