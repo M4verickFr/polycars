@@ -1,7 +1,10 @@
+import axios from "axios";
 import React, {useState} from 'react';
 import Header from './components/header';
 import Cars from './components/cars';
 import List from './components/list';
+
+const baseURL = "https://polytech-info734.herokuapp.com/api/v1/";
 
 const initialFormData = Object.freeze({
   title: "",
@@ -15,6 +18,15 @@ function App() {
   const [formData, updateFormData] = useState(initialFormData);
 
   const [cars, addCars] = useState([]);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      updateFormData(response.data);
+    });
+  }, []);
+
+  if (!formData) return null;
+
 
   return (
     <div className="App">
