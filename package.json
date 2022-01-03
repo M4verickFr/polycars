@@ -13,7 +13,7 @@
     "MongoDB",
     "Polycars"
   ],
-  "author": "Marc-Philippe Huget",
+  "author": "Maverick & Dorian",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
