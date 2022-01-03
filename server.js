@@ -27,6 +27,9 @@ const mongoose = require('mongoose');
 //Create an application 
 const app = express();
 
+// Create an port number
+const PORT = process.env.PORT || 3000;
+
 //used to fetch the data from forms on HTTP POST, and PUT
 app.use(bodyParser.urlencoded({
 
@@ -87,8 +90,8 @@ app.use('/api/v1/', polycarsRoutes);
 //use the 404 middleware
 app.use(http404.notFound);
 
-//Listen on the port 3000
-app.listen(3000, () => {
+//Listen on the port
+app.listen(PORT, () => {
     //Add info to the loggers
     infoLogger.info('Server is running on port: 3000');
 
